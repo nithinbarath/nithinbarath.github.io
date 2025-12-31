@@ -8,17 +8,27 @@
     <!-- Bootstrap 5.0.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="public/style.css">
 </head>
-<body>
+
+<body class="dark-mode">
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <a class="navbar-brand fw-bold" href="#">Nithinbarath VP</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+
+        <div class="d-flex align-items-center ms-auto">
+            <!-- Theme Toggle -->
+            <div class="form-check form-switch text-light me-3">
+                <input class="form-check-input" type="checkbox" id="themeToggle" checked>
+                <label class="form-check-label" for="themeToggle">Dark</label>
+            </div>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
 
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto">
@@ -37,7 +47,7 @@
     <div class="container text-center">
         <h1>Hi, I'm <span>Nithinbarath VP</span></h1>
         <p class="lead">Full Stack Developer | 4.5+ Years Experience</p>
-        <a href="resume/nithinbarathvp.pdf" class="btn btn-light btn-lg mt-3" download>
+        <a href="resume/nithinbarathvp.pdf" class="btn btn-primary btn-lg mt-3" download>
             Download Resume
         </a>
     </div>
@@ -48,15 +58,14 @@
     <div class="container">
         <h2 class="section-title">About Me</h2>
         <p class="text-center">
-            Passionate Full Stack Developer with 4.5+ years of experience in building
-            scalable SaaS applications, APIs, and cloud-native systems.
-            Strong in Python, JavaScript, FastAPI, React, Docker, and AI-powered applications.
+            Full Stack Developer with 4.5+ years of experience building scalable SaaS,
+            API-driven, and AI-powered applications using modern tech stacks.
         </p>
     </div>
 </section>
 
 <!-- Skills -->
-<section id="skills" class="section bg-light">
+<section id="skills" class="section">
     <div class="container">
         <h2 class="section-title">Skills</h2>
 
@@ -68,7 +77,6 @@
             <span class="skill-badge">JavaScript</span>
             <span class="skill-badge">React.js</span>
             <span class="skill-badge">Next.js</span>
-            <span class="skill-badge">jQuery</span>
         </div>
 
         <h5 class="mt-4">Backend</h5>
@@ -86,7 +94,6 @@
             <span class="skill-badge">MongoDB</span>
             <span class="skill-badge">Docker</span>
             <span class="skill-badge">Git</span>
-            <span class="skill-badge">Pinecone</span>
         </div>
     </div>
 </section>
@@ -100,26 +107,26 @@
             <div class="timeline-item">
                 <h5>Senior Product Developer – Webnexs</h5>
                 <small>Jan 2023 – Present</small>
-                <p>Leading SaaS product development, API architecture, Dockerized deployments.</p>
+                <p>Architecting scalable SaaS platforms and cloud deployments.</p>
             </div>
 
             <div class="timeline-item">
                 <h5>Full Stack Developer – Media Wonderz</h5>
                 <small>Mar 2022 – Dec 2022</small>
-                <p>Developed enterprise-level applications and optimized backend systems.</p>
+                <p>Delivered enterprise web solutions and optimized backend APIs.</p>
             </div>
 
             <div class="timeline-item">
                 <h5>Full Stack Developer – Kanigam LLP</h5>
                 <small>Sep 2021 – Feb 2022</small>
-                <p>Worked on end-to-end product development and third-party integrations.</p>
+                <p>Worked on full-cycle product development and integrations.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Projects -->
-<section id="projects" class="section bg-light">
+<section id="projects" class="section">
     <div class="container">
         <h2 class="section-title">Projects</h2>
 
@@ -127,10 +134,8 @@
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">AI RAG Platform</h5>
-                        <p>LLM-based RAG system using FastAPI, Pinecone, and LLaMA.</p>
-                        <span class="badge bg-primary">AI</span>
-                        <span class="badge bg-secondary">FastAPI</span>
+                        <h5>AI RAG Platform</h5>
+                        <p>LLM-powered RAG system using FastAPI & Pinecone.</p>
                     </div>
                 </div>
             </div>
@@ -138,10 +143,8 @@
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">SaaS Web Platform</h5>
-                        <p>Scalable SaaS platform with React, Node.js, Docker.</p>
-                        <span class="badge bg-success">SaaS</span>
-                        <span class="badge bg-dark">Docker</span>
+                        <h5>SaaS Platform</h5>
+                        <p>Scalable SaaS platform with Docker and cloud-native design.</p>
                     </div>
                 </div>
             </div>
@@ -149,10 +152,8 @@
             <div class="col-md-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">E-Commerce System</h5>
-                        <p>Advanced product import/export system with barcode generation.</p>
-                        <span class="badge bg-warning">Node.js</span>
-                        <span class="badge bg-info">MySQL</span>
+                        <h5>E-Commerce System</h5>
+                        <p>Product import/export & barcode generation system.</p>
                     </div>
                 </div>
             </div>
@@ -161,14 +162,11 @@
 </section>
 
 <!-- Contact -->
-<section id="contact" class="section">
-    <div class="container text-center">
+<section id="contact" class="section text-center">
+    <div class="container">
         <h2 class="section-title">Contact</h2>
         <p>Email: <strong>nithinvp3599@gmail.com</strong></p>
-        <p>Location: Pollachi, Coimbatore</p>
-        <a href="mailto:nithinvp3599@gmail.com" class="btn btn-outline-dark">
-            Contact Me
-        </a>
+        <p>Pollachi, Coimbatore</p>
     </div>
 </section>
 
@@ -177,5 +175,19 @@
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Theme Toggle Script -->
+<script>
+    const toggle = document.getElementById("themeToggle");
+    const body = document.body;
+    const label = document.querySelector(".form-check-label");
+
+    toggle.addEventListener("change", () => {
+        body.classList.toggle("light-mode");
+        body.classList.toggle("dark-mode");
+        label.textContent = body.classList.contains("dark-mode") ? "Dark" : "Light";
+    });
+</script>
+
 </body>
 </html>
