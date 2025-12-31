@@ -8,17 +8,18 @@
     <!-- Bootstrap 5.0.2 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="#">Nithinbarath VP</a>
+        <a class="navbar-brand fw-bold" href="#">Nithinbarath VP</a>
         <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navMenu">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
@@ -36,7 +37,7 @@
     <div class="container text-center">
         <h1>Hi, I'm <span>Nithinbarath VP</span></h1>
         <p class="lead">Full Stack Developer | 4.5+ Years Experience</p>
-        <a href="resume/nithinbarathvp.pdf" class="btn btn-primary btn-lg" download>
+        <a href="resume/nithinbarathvp.pdf" class="btn btn-light btn-lg mt-3" download>
             Download Resume
         </a>
     </div>
@@ -46,10 +47,10 @@
 <section id="about" class="section">
     <div class="container">
         <h2 class="section-title">About Me</h2>
-        <p>
+        <p class="text-center">
             Passionate Full Stack Developer with 4.5+ years of experience in building
-            scalable web applications using modern frontend and backend technologies.
-            Strong experience in SaaS platforms, APIs, cloud deployments, and AI-powered applications.
+            scalable SaaS applications, APIs, and cloud-native systems.
+            Strong in Python, JavaScript, FastAPI, React, Docker, and AI-powered applications.
         </p>
     </div>
 </section>
@@ -58,31 +59,34 @@
 <section id="skills" class="section bg-light">
     <div class="container">
         <h2 class="section-title">Skills</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <h5>Frontend</h5>
-                <ul>
-                    <li>HTML, CSS, Bootstrap</li>
-                    <li>JavaScript, jQuery</li>
-                    <li>React.js, Next.js</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Backend</h5>
-                <ul>
-                    <li>Python, Node.js</li>
-                    <li>FastAPI, Express.js</li>
-                    <li>REST APIs</li>
-                </ul>
-            </div>
-            <div class="col-md-4">
-                <h5>Database & DevOps</h5>
-                <ul>
-                    <li>MySQL, PostgreSQL, MongoDB</li>
-                    <li>Docker, Git</li>
-                    <li>Pinecone, Kubernetes</li>
-                </ul>
-            </div>
+
+        <h5>Frontend</h5>
+        <div>
+            <span class="skill-badge">HTML</span>
+            <span class="skill-badge">CSS</span>
+            <span class="skill-badge">Bootstrap</span>
+            <span class="skill-badge">JavaScript</span>
+            <span class="skill-badge">React.js</span>
+            <span class="skill-badge">Next.js</span>
+            <span class="skill-badge">jQuery</span>
+        </div>
+
+        <h5 class="mt-4">Backend</h5>
+        <div>
+            <span class="skill-badge">Python</span>
+            <span class="skill-badge">FastAPI</span>
+            <span class="skill-badge">Node.js</span>
+            <span class="skill-badge">Express.js</span>
+        </div>
+
+        <h5 class="mt-4">Database & DevOps</h5>
+        <div>
+            <span class="skill-badge">MySQL</span>
+            <span class="skill-badge">PostgreSQL</span>
+            <span class="skill-badge">MongoDB</span>
+            <span class="skill-badge">Docker</span>
+            <span class="skill-badge">Git</span>
+            <span class="skill-badge">Pinecone</span>
         </div>
     </div>
 </section>
@@ -91,20 +95,26 @@
 <section id="experience" class="section">
     <div class="container">
         <h2 class="section-title">Experience</h2>
-        <ul class="timeline">
-            <li>
+
+        <div class="timeline">
+            <div class="timeline-item">
                 <h5>Senior Product Developer – Webnexs</h5>
-                <span>Jan 2023 – Present</span>
-            </li>
-            <li>
+                <small>Jan 2023 – Present</small>
+                <p>Leading SaaS product development, API architecture, Dockerized deployments.</p>
+            </div>
+
+            <div class="timeline-item">
                 <h5>Full Stack Developer – Media Wonderz</h5>
-                <span>Mar 2022 – Dec 2022</span>
-            </li>
-            <li>
+                <small>Mar 2022 – Dec 2022</small>
+                <p>Developed enterprise-level applications and optimized backend systems.</p>
+            </div>
+
+            <div class="timeline-item">
                 <h5>Full Stack Developer – Kanigam LLP</h5>
-                <span>Sep 2021 – Feb 2022</span>
-            </li>
-        </ul>
+                <small>Sep 2021 – Feb 2022</small>
+                <p>Worked on end-to-end product development and third-party integrations.</p>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -112,28 +122,37 @@
 <section id="projects" class="section bg-light">
     <div class="container">
         <h2 class="section-title">Projects</h2>
+
         <div class="row">
             <div class="col-md-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">SaaS Platform</h5>
-                        <p class="card-text">Scalable SaaS application using FastAPI, React, Docker.</p>
+                        <h5 class="card-title">AI RAG Platform</h5>
+                        <p>LLM-based RAG system using FastAPI, Pinecone, and LLaMA.</p>
+                        <span class="badge bg-primary">AI</span>
+                        <span class="badge bg-secondary">FastAPI</span>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">AI RAG System</h5>
-                        <p class="card-text">LLM-based RAG application with Pinecone and LLaMA.</p>
+                        <h5 class="card-title">SaaS Web Platform</h5>
+                        <p>Scalable SaaS platform with React, Node.js, Docker.</p>
+                        <span class="badge bg-success">SaaS</span>
+                        <span class="badge bg-dark">Docker</span>
                     </div>
                 </div>
             </div>
+
             <div class="col-md-4">
-                <div class="card">
+                <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title">E-Commerce Platform</h5>
-                        <p class="card-text">Node.js + MySQL platform with import/export and barcode generation.</p>
+                        <h5 class="card-title">E-Commerce System</h5>
+                        <p>Advanced product import/export system with barcode generation.</p>
+                        <span class="badge bg-warning">Node.js</span>
+                        <span class="badge bg-info">MySQL</span>
                     </div>
                 </div>
             </div>
@@ -153,7 +172,7 @@
     </div>
 </section>
 
-<footer class="bg-dark text-white text-center p-3">
+<footer class="text-center p-4">
     © 2025 Nithinbarath VP
 </footer>
 

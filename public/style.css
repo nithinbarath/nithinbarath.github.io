@@ -1,34 +1,107 @@
-body {
-    padding-top: 70px;
-    font-family: Arial, sans-serif;
+:root {
+    --primary: #6366f1;
+    --dark: #0f172a;
 }
 
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(15, 23, 42, 0.95);
+}
+
+/* Hero */
 .hero {
-    height: 90vh;
-    background: linear-gradient(to right, #0d6efd, #6610f2);
+    min-height: 90vh;
+    background: linear-gradient(135deg, #4f46e5, #9333ea);
     color: white;
     display: flex;
     align-items: center;
 }
 
 .hero span {
-    font-weight: bold;
+    background: linear-gradient(to right, #fde68a, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
+/* Sections */
 .section {
-    padding: 60px 0;
+    padding: 80px 0;
 }
 
 .section-title {
     text-align: center;
-    margin-bottom: 40px;
-    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 50px;
 }
 
-.timeline li {
-    margin-bottom: 15px;
+.section-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: var(--primary);
+    display: block;
+    margin: 10px auto;
+    border-radius: 10px;
 }
 
+/* Skills */
+.skill-badge {
+    display: inline-block;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.skill-badge:hover {
+    transform: translateY(-5px);
+    background: var(--primary);
+    color: white;
+}
+
+/* Timeline */
+.timeline {
+    border-left: 3px solid var(--primary);
+    padding-left: 30px;
+}
+
+.timeline-item {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -39px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    background: var(--primary);
+    border-radius: 50%;
+}
+
+/* Cards */
 .card {
-    margin-bottom: 20px;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer */
+footer {
+    background: var(--dark);
+    color: #cbd5f5;
 }
